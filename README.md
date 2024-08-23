@@ -1,7 +1,9 @@
 # Digital Counter
 
 A simple and responsive web application for counting with increment, decrement, and reset features. Designed with HTML, CSS, JavaScript, and Bootstrap for a clean and user-friendly interface.
+## Image
 
+![Digital Counter View](Image.JPG)
 ## Features
 
 - **Increment**: Increase the counter value by 1.
