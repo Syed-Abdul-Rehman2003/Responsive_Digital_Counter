@@ -1,0 +1,130 @@
+/* Reset and global styles */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(255, 132, 100);
+    background: linear-gradient(135deg, rgba(255, 132, 100, 1) 0%, rgb(250, 87, 152) 25%, rgb(255, 154, 182) 75%, rgb(255, 235, 145) 100%);
+}
+
+/* Container and positioning */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* Heading styles */
+.heading {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Counter body styles */
+.counter-body {
+    border-radius: 20px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.counter-body h1 {
+    margin-bottom: 15px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+.card-button button {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-button button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Copyright container */
+.copy-container {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 4rem;
+    }
+    .counter-body h1 {
+        font-size: 3.5rem;
+    }
+    .card-button button {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .counter-body h1 {
+        font-size: 3rem;
+    }
+    .card-button button {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .counter-body h1 {
+        font-size: 2.5rem;
+    }
+    .card-button button {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 1.75rem;
+    }
+    .counter-body h1 {
+        font-size: 2rem;
+    }
+    .card-button button {
+        width: 50px;
+        height: 50px;
+    }
+}
